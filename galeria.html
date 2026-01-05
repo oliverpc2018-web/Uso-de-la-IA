@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Galería: IA y el Arte - Proyecto</title>
+    <title>Galería: IA en Arte y Marketing</title>
     <link rel="stylesheet" href="estilo.css">
     <style>
         .contenedor-galeria {
@@ -13,25 +14,34 @@
             padding: 20px;
         }
         .item-galeria {
-            background-color: #f9f9f9;
+            background-color: #ffffff;
             border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 10px;
+            border-radius: 12px;
+            padding: 15px;
             text-align: center;
-            width: 280px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .item-galeria:hover {
+            transform: scale(1.05);
         }
         .item-galeria img {
             width: 100%;
             height: 200px;
             object-fit: cover;
+            border-radius: 8px;
+        }
+        .categoria {
+            display: inline-block;
+            padding: 2px 8px;
             border-radius: 4px;
+            font-size: 0.8em;
+            margin-bottom: 10px;
+            color: white;
         }
-        .item-galeria p {
-            font-size: 0.9em;
-            margin-top: 10px;
-            color: #34495e;
-        }
+        .cat-arte { background-color: #9b59b6; }
+        .cat-mkt { background-color: #e67e22; }
     </style>
 </head>
 <body>
@@ -48,56 +58,35 @@
     </header>
 
     <main>
-        <h2>La Inteligencia Artificial en el Mundo del Arte</h2>
-        <p>Esta galería explora cómo los algoritmos de aprendizaje profundo están colaborando con los humanos para crear nuevas formas de expresión visual.</p>
+        <h2>Impacto de la IA: Creatividad y Estrategia</h2>
+        <p>Explora cómo la IA está revolucionando la creación artística y la forma en que las marcas se comunican con nosotros.</p>
 
         <div class="contenedor-galeria">
             <div class="item-galeria">
-                <img src="activos/logo.png" alt="Logo">
-                <p><strong>1. Identidad:</strong> Logo del proyecto diseñado con apoyo visual de IA.</p>
-            </div>
-            <div class="item-galeria">
+                <span class="categoria cat-arte">Arte</span>
                 <img src="activos/arte-generativo.jpg" alt="Arte Generativo">
-                <p><strong>2. Arte Generativo:</strong> Imágenes creadas a partir de descripciones de texto (prompts).</p>
+                <p><strong>Arte Generativo:</strong> Algoritmos que crean piezas únicas basadas en datos y redes neuronales.</p>
             </div>
-            <div class="item-galeria">
-                <img src="activos/estilos.jpg" alt="Transferencia de Estilo">
-                <p><strong>3. Transferencia de Estilo:</strong> Algoritmos que imitan pinceladas de Van Gogh o Picasso.</p>
-            </div>
-            <div class="item-galeria">
-                <img src="activos/diseno.jpg" alt="Diseño">
-                <p><strong>4. Diseño Gráfico:</strong> Herramientas de IA que ayudan a componer posters y publicidad.</p>
-            </div>
-            <div class="item-galeria">
-                <img src="activos/foto-ia.jpg" alt="Fotografía">
-                <p><strong>5. Hiperrealismo:</strong> Retratos de personas que no existen, generados por redes neuronales.</p>
-            </div>
-            <div class="item-galeria">
-                <img src="activos/ideograma.png" alt="Ideograma">
-                <p><strong>6. Ideograma:</strong> Mapa conceptual de la unión entre el cerebro humano y el algoritmo.</p>
-            </div>
-            <div class="item-galeria">
-                <img src="activos/infografia.png" alt="Infografía">
-                <p><strong>7. Infograma:</strong> Los pasos que sigue una IA para "entender" un cuadro artístico.</p>
-            </div>
-            <div class="item-galeria">
-                <img src="activos/arquitectura.jpg" alt="Arquitectura">
-                <p><strong>8. Arquitectura:</strong> Diseños de edificios futuristas creados mediante IA creativa.</p>
-            </div>
-            <div class="item-galeria">
-                <p>Imagen sobre Copyright</p>
-                <img src="activos/derechos.jpg" alt="Ética en el arte">
-                <p><strong>9. Ética y Propiedad:</strong> El debate sobre quién es el dueño de una obra hecha por IA.</p>
-            </div>
-            <div class="item-galeria">
-                <img src="activos/futuro.jpg" alt="Futuro">
-                <p><strong>10. Futuro:</strong> La IA como una herramienta más, como lo fue el pincel o la cámara.</p>
-            </div>
-        </div>
-    </main>
 
-    <footer>
-        <p>Autor: Álex Turing - Proyecto Escolar sobre IA y Creatividad</p>
-    </footer>
-</body>
-</html>
+            <div class="item-galeria">
+                <span class="categoria cat-mkt">Marketing</span>
+                <img src="activos/marketing-ia.jpg" alt="IA en Marketing">
+                <p><strong>Publicidad Predictiva:</strong> La IA analiza gustos para mostrarnos productos que realmente nos interesan.</p>
+            </div>
+
+            <div class="item-galeria">
+                <span class="categoria cat-arte">Arte</span>
+                <img src="activos/diseno-logo.jpg" alt="Diseño de logos">
+                <p><strong>Branding Automático:</strong> Herramientas que generan identidades visuales en segundos.</p>
+            </div>
+
+            <div class="item-galeria">
+                <span class="categoria cat-mkt">Marketing</span>
+                <img src="activos/audiencia.jpg" alt="Análisis de datos">
+                <p><strong>Segmentación:</strong> Entender qué siente el público mediante el análisis de sentimientos en redes.</p>
+            </div>
+
+            <div class="item-galeria">
+                <span class="categoria cat-arte">Arte</span>
+                <img src="activos/pintura.jpg" alt="Pintura digital">
+                <p><strong>Transferencia de Estilo:</strong> Fotos cotidianas convertidas en
